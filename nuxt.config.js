@@ -57,6 +57,12 @@ export default {
     ],
     __dangerouslyDisableSanitizers: ['noscript']
   },
+
+  styleResources: {
+    scss: [
+      '~assets/scss/nav.scss',
+    ]
+  },
   /*
    ** Customize the progress-bar color
    */
@@ -64,7 +70,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/css/main.pcss'],
+  css: [ '~assets/css/main.css'],
   /*
    ** Plugins to load before mounting the App
    */
@@ -72,7 +78,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss', '@nuxtjs/svg', '@nuxtjs/pwa'],
+  buildModules: ['@nuxtjs/color-mode', '@nuxtjs/tailwindcss','@nuxtjs/style-resources', '@nuxtjs/svg', '@nuxtjs/pwa'],
   /*
    ** Nuxt.js modules
    */
